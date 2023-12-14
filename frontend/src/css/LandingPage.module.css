@@ -1,0 +1,108 @@
+.landingContainer {
+text-align: center;
+padding: 50px;
+}
+
+.headerContent {
+min-height: 100vh; /* This ensures that the logo and buttons are the only thing in the initial view */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.logo {
+max-width: 300px; /* Adjust as per your logo size */
+margin-bottom: 50px;
+}
+
+.buttonsLanding button {
+padding: 10px 20px;
+margin: 10px;
+border-radius: 5px;
+border: none;
+cursor: pointer;
+font-size: 16px;
+}
+
+.loginButton {
+background-color: #007bff;
+color: white;
+}
+
+.registerButton {
+background-color: #28a745;
+color: white;
+}
+
+.additionalInfo {
+margin-top: 50px;
+}
+
+.infoSection {
+  width: 100%;
+}
+
+.textContainer {
+  max-width: 40%;
+  word-wrap: break-word;
+}
+
+.imageTextPair {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.leftImage, .rightText {
+  margin-right: 20px;
+}
+
+.rightImage, .leftText {
+  margin-left: 20px;
+  
+}
+
+.leftImage, .rightImage {
+  width: 40%;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* This ensures the image covers the frame without being stretched */
+}
+
+.leftText, .rightText {
+  font-size: xx-large;
+  font: roboto;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .imageTextPair {
+    flex-direction: column;
+  }
+  .leftImage, .rightImage, .leftText, .rightText {
+    margin: 0 0 20px 0;
+  }
+  .leftText, .rightText {
+    font-size: medium;
+  }
+}
+
+successMessage {
+  color: #4CAF50; /* Green text color */
+  font-size: 18px; /* Adjust the font size */
+  font-weight: bold; /* Make the text bold */
+  margin-bottom: 20px; /* Add some bottom margin for spacing */
+  text-align: center; /* Center the text */
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.errorMessage {
+  color: #ff0000; /* Red text color */
+  font-size: 18px; /* Adjust the font size */
+  font-weight: bold; /* Make the text bold */
+  margin-bottom: 20px; /* Add some bottom margin for spacing */
+  text-align: center; /* Center the text */
+  font-family: 'Titillium Web', sans-serif;
+}
+  
