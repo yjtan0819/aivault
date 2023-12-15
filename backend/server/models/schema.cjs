@@ -29,7 +29,7 @@ const userSchema = new mongoose.Schema({
         ref: 'Image',
         required: false,
     },
-    savedImages: {
+    bookmarkedImages: {
         type: [mongoose.Schema.Types.ObjectId],
         ref: 'Image',
         required: false,
