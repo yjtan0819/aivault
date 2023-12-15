@@ -16,14 +16,15 @@ export default {
     },
     extend: {
       colors: {
-        'black-transparent': 'rgba(75, 81, 74, 0.85)',
+        'black-transparent': 'rgba(29, 38, 72, 0.85)', // Darkened black-transparent
         'white-transparent': 'rgba(255, 255, 255, 0.8)',
-        'text-light': '#eeeeee',
-        'text-dark': '#666666',
-        'background': '#eeeeee',
-        'primary': '#90b493',
-        'secondary': '#728370',
-        'accent': '#4b514a',
+        'text-light': '#405080', // Darkened text-light
+        'text-dark': '#1b263d', // Darkened text-dark
+        'background': '#f0f0f0', // Darkened background
+        'primary': '#405080', // Darkened primary
+        'secondary': '#304860', // Darkened secondary
+        'tertiary': '#90A0C0', // Lightened tertiary
+        'accent': '#405080', // Darkened accent
       },
     },
     backdropFilter: {
@@ -32,5 +33,4 @@ export default {
     },
   },
   plugins: [],
-}
-
+};
