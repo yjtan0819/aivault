@@ -1,0 +1,51 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000; /* Adjust background color as needed */
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logoContainer {
+  margin-bottom: 20px;
+}
+
+.loginContainer img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.inputLogin[type="text"],
+.inputLogin[type="password"] {
+  width: 250px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.buttonLogin[type="submit"] {
+  width: 250px;
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buttonLogin[type="submit"]:hover {
+  background-color: #0056b3;
+}
