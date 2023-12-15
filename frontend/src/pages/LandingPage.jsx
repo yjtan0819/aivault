@@ -6,7 +6,7 @@ const LandingPage = () => {
   return (
     <div className={styles.landingContainer}>
       <div className={styles.headerContent}>
-        <img src="crisp-high-resolution-logo.png" alt="Company Logo" className={styles.logo}/>
+        <img src="aivault-high-resolution-logo-transparent.png" alt="Company Logo" className={styles.logo}/>
         <div className={styles.buttonsLanding}>
           <Link to="/login">
             <button className={styles.loginButton}>Login</button>

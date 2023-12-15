@@ -4,7 +4,7 @@ padding: 50px;
 }
 
 .headerContent {
-min-height: 100vh; /* This ensures that the logo and buttons are the only thing in the initial view */
+height: 75vh;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -12,7 +12,7 @@ align-items: center;
 }
 
 .logo {
-max-width: 300px; /* Adjust as per your logo size */
+max-width: 200px; 
 margin-bottom: 50px;
 }
 
@@ -33,59 +33,6 @@ color: white;
 .registerButton {
 background-color: #28a745;
 color: white;
-}
-
-.additionalInfo {
-margin-top: 50px;
-}
-
-.infoSection {
-  width: 100%;
-}
-
-.textContainer {
-  max-width: 40%;
-  word-wrap: break-word;
-}
-
-.imageTextPair {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.leftImage, .rightText {
-  margin-right: 20px;
-}
-
-.rightImage, .leftText {
-  margin-left: 20px;
-  
-}
-
-.leftImage, .rightImage {
-  width: 40%;
-  border-radius: 50%; /* Makes the image circular */
-  object-fit: cover; /* This ensures the image covers the frame without being stretched */
-}
-
-.leftText, .rightText {
-  font-size: xx-large;
-  font: roboto;
-}
-
-/* Media query for responsiveness */
-@media (max-width: 768px) {
-  .imageTextPair {
-    flex-direction: column;
-  }
-  .leftImage, .rightImage, .leftText, .rightText {
-    margin: 0 0 20px 0;
-  }
-  .leftText, .rightText {
-    font-size: medium;
-  }
 }
 
 successMessage {
