@@ -59,25 +59,9 @@ const SuccessPurchasePage = () => {
   }
 
   if (authenticated) {
-    return (
-      <div className={styles.landingContainer}>
-        <div className={styles.headerContent}>
-          <Link to="/home">
-            <img src="crispium.png" alt="crispium" className={styles.logo} />
-          </Link>
-          <div className={styles.buttonsLanding}>
-            <div>
-              <p className={styles.successMessage}>
-                  Thank you for your purchase!
-              </p>
-              <p className={styles.successMessage}>
-                  Click the image above to return to the home page.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
+    window.alert('You have successfully purchased premium!');
+    navigate('/home');
+    return null;
   } else if (authenticated === false) {
     window.alert('You must be logged in to view this page.');
     navigate('/login');

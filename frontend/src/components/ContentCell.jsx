@@ -48,7 +48,6 @@ const ContentCell = ({image, profilePicture, likes, aimodel, imageID}) => {
                 // Update the like count from the response
                 const data = await response.json();
                 setNumberOfLikes(data.numberLikes);
-                console.log('Number of Likes:', numberOfLikes);
                 
                 const like = await checkLikeImage(token, imageID);
                 setIsLiked(like.liked);
