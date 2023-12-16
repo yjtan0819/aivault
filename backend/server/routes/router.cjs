@@ -30,6 +30,10 @@ function findCommentOrReply(comments, id) {
   return null;
 }
 
+router.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
 router.post('/login', async (req, res) => {
   try {
     const { username, password } = req.body;
