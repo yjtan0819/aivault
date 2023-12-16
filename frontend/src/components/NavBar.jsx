@@ -8,6 +8,7 @@ import {MdCategory} from 'react-icons/md';
 import { FaLock } from "react-icons/fa";
 import checkPremium from '../utilities/premiumUtils';
 
+
 const NavBar = () => {
     const [isDropdownOpen, setDropdownOpen] = useState(false);
     const [postDropdownOpen, setPostDropdownOpen] = useState(false);
@@ -19,6 +20,7 @@ const NavBar = () => {
     const [isSearchExpanded, setSearchExpanded] = useState(false);  
     const [searchQuery, setSearchQuery] = useState("");
     const dropdownRef = useRef(null); // Ref for dropdown
+    const profilePicRef = useRef(null); // Ref for profile picture
     const [promptText, setPromptText] = useState('');
     const [file, setFile] = useState(null);
     const [premiumUser, setPremiumUser] = useState(false);
@@ -61,6 +63,7 @@ const NavBar = () => {
                 if (response.ok) {
                     console.log('Post successful');
                     alert('Post success');
+                    window.location.reload();
                     setPreviewImage(null);
                     setPromptText('');
                     setCategory(null);
@@ -68,7 +71,7 @@ const NavBar = () => {
                 }
                 else{
                     console.log('Post failed');
-                    alert('Error during post:', response.statusText);
+                    alert('Error during post:', error.message);
                 }
             }
             catch (error) {
@@ -77,11 +80,13 @@ const NavBar = () => {
         }
     };
 
+
     const handleLogout = async (event) => {
         event.preventDefault();
         const storedToken = localStorage.getItem('jwtToken');
 
         if (storedToken) {
+            // call the logout endpoint
             try {
                 const response = await fetch('http://localhost:4000/logout', {
                     method: 'POST',
@@ -195,7 +200,7 @@ const NavBar = () => {
         <div className="bg-black-transparent backdrop-blur h-[44px] flex sticky top-0 z-50 items-center gap-x-4">
             <Link to="/home"> {/* Centered "MUSE" */}
                 <p className="text-[36px] text-white font-bold cursor-pointer mx-4">
-                    CRISP
+                    AIVault
                 </p>
             </Link>
             <button
@@ -249,7 +254,7 @@ const NavBar = () => {
     <nav className="absolute top-[44px] right-0 w-[150px] bg-white rounded-lg shadow-lg z-10">
         <ul className="flex flex-col gap-y-2 rounded-lg">
             {menuItems.map(item => (
-                <li key={item.name} className='bg-white hover:bg-primary'>
+                <li key={item.name} className='bg-white hover:bg-tertiary'>
                     {item.name === 'Logout' ? (
                         <button onClick={handleLogout} className="flex flex-row items-center gap-x-2 w-full text-left">
                             <p className="text-accent p-2 text-[18px] font-bold">{item.name}</p>

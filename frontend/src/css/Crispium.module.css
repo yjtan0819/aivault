@@ -1,0 +1,58 @@
+.checkoutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.itemBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.itemImage {
+    max-width: 100px; /* Adjust as needed */
+}
+
+.itemName {
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.itemPrice {
+    font-size: 18px;
+    color: #555;
+}
+
+.totalBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.totalText {
+    font-size: 20px;
+}
+
+.checkoutButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.checkoutButton:hover {
+    background-color: #0056b3;
+}

@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const { v4: uuidv4 } = require('uuid');
 
 const userSchema = new mongoose.Schema({
+    // your user schema definition
     username: {
         type: String,
         required: true,
@@ -24,16 +25,6 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: false,
     },
-    likedImages: {
-        type: [mongoose.Schema.Types.ObjectId],
-        ref: 'Image',
-        required: false,
-    },
-    bookmarkedImages: {
-        type: [mongoose.Schema.Types.ObjectId],
-        ref: 'Image',
-        required: false,
-    },
 });
 
 const commentSchema = new mongoose.Schema({
@@ -42,7 +33,7 @@ const commentSchema = new mongoose.Schema({
     postedBy: mongoose.Schema.Types.ObjectId,
     postedAt: String,
     replies: [this] // or [commentSchema] if defined separately
-});
+  });
 
 const imageSchema = new mongoose.Schema({
     userId: {
@@ -75,6 +66,32 @@ const imageSchema = new mongoose.Schema({
     }
 });
 
+const bookmarkedImageRelationshipSchema = new mongoose.Schema({
+    user: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User',
+        required: true,
+    },
+    image: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Image',
+        required: true,
+    }
+});
+
+const likedImageRelationshipSchema = new mongoose.Schema({
+    user: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User',
+        required: true,
+    },
+    image: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Image',
+        required: true,
+    }
+});
+
 const jwtTokenSchema = new mongoose.Schema({
     token: {
         type: String,
@@ -104,11 +121,15 @@ const Token = mongoose.model('Token', jwtTokenSchema, 'Tokens');
 const Image = mongoose.model('Image', imageSchema, 'Images');
 const Comment = mongoose.model('Comment', commentSchema, 'Comments');
 const Blacklist = mongoose.model('Blacklist', blacklistSchema, 'Blacklists');
+const BookmarkedImageRelationship = mongoose.model('BookmarkedImageRelationship', bookmarkedImageRelationshipSchema, 'BookmarkedImageRelationships');
+const LikedImageRelationship = mongoose.model('LikedImageRelationship', likedImageRelationshipSchema, 'LikedImageRelationships');
 
 module.exports = {
     User,
     Token,
     Image,
     Comment,
-    Blacklist
+    Blacklist,
+    BookmarkedImageRelationship,
+    LikedImageRelationship,
 };
