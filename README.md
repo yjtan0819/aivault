@@ -1,8 +1,8 @@
 # AIVault
 
-## Description
+## Link
 
-Platofrm where users can post  and browse AI-generated content
+https://aivault.netlify.app/
 
 ## Credit Card for Testing
 
