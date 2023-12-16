@@ -1,6 +1,6 @@
 const updateBio = async (token, bio) => {
     try {
-      const response = await fetch('http://localhost:4000/update-bio', {
+      const response = await fetch('https://aivault-backend.onrender.com/update-bio', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,

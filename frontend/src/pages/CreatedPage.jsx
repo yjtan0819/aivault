@@ -43,7 +43,7 @@ function CreatedPage() {
   };
 
   const fetchImagesFromBackend = async (token) => {
-    const response = await fetch('http://localhost:4000/get-my-images', {
+    const response = await fetch('https://aivault-backend.onrender.com/get-my-images', {
       method: 'GET',
       headers: {
         Authorization: `Bearer ${token}`,

@@ -1,6 +1,6 @@
 const checkCustomProfilePicture = async (token, userID) => {
     try {
-      const response = await fetch(`http://localhost:4000/get-profile-picture-user/${userID}`, {
+      const response = await fetch(`https://aivault-backend.onrender.com/get-profile-picture-user/${userID}`, {
         method: 'GET',
         headers: {
           Authorization: `Bearer ${token}`,

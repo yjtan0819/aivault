@@ -1,6 +1,6 @@
 const getComments = async (token, imageID) => {
     try {
-        const response = await fetch(`http://localhost:4000/get-comments/${imageID}`, {
+        const response = await fetch(`https://aivault-backend.onrender.com/get-comments/${imageID}`, {
             method: 'GET',
             headers: {
                 Authorization: `Bearer ${token}`,

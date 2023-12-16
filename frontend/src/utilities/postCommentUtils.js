@@ -1,6 +1,6 @@
 const postComment = async (token, commentText, imageId) => {
     try {
-        const response = await fetch(`http://localhost:4000/post-comment/${imageId}`, {
+        const response = await fetch(`https://aivault-backend.onrender.com/post-comment/${imageId}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

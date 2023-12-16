@@ -28,7 +28,7 @@ const CheckoutPage = () => {
     event.preventDefault();
     
     try {
-      const response = await fetch("http://localhost:4000/create-checkout-session", {
+      const response = await fetch("https://aivault-backend.onrender.com/create-checkout-session", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

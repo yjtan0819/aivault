@@ -1,6 +1,6 @@
 const checkPremium = async (token) => {
     try {
-      const response = await fetch('http://localhost:4000/get-premium', {
+      const response = await fetch('https://aivault-backend.onrender.com/get-premium', {
         method: 'GET',
         headers: {
           Authorization: `Bearer ${token}`,

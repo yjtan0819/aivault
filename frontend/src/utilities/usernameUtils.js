@@ -1,6 +1,6 @@
 const checkUsername = async (token) => {
     try {
-      const response = await fetch('http://localhost:4000/get-username', {
+      const response = await fetch('https://aivault-backend.onrender.com/get-username', {
         method: 'GET',
         headers: {
           Authorization: `Bearer ${token}`,

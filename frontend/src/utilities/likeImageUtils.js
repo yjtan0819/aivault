@@ -1,6 +1,6 @@
 const checkLikeImage = async (token, imageID) => {
     try {
-      const response = await fetch(`http://localhost:4000/get-user-like-image/${imageID}`, {
+      const response = await fetch(`https://aivault-backend.onrender.com/get-user-like-image/${imageID}`, {
         method: 'GET',
         headers: {
           Authorization: `Bearer ${token}`,

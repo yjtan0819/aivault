@@ -52,7 +52,7 @@ const NavBar = () => {
             formData.append('status', status);
             formData.append('comments', comments)
             try {
-                const response = await fetch('http://localhost:4000/post', {
+                const response = await fetch('https://aivault-backend.onrender.com/post', {
                     method: 'POST',
                     headers: {
                         Authorization: `Bearer ${storedToken}`,
@@ -88,7 +88,7 @@ const NavBar = () => {
         if (storedToken) {
             // call the logout endpoint
             try {
-                const response = await fetch('http://localhost:4000/logout', {
+                const response = await fetch('https://aivault-backend.onrender.com/logout', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

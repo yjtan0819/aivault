@@ -41,7 +41,7 @@ function HomePage() {
   };
 
   const fetchImagesFromBackend = async (token) => {
-    const response = await fetch('http://localhost:4000/get-all-images', {
+    const response = await fetch('https://aivault-backend.onrender.com/get-all-images', {
       method: 'GET',
       headers: {
         Authorization: `Bearer ${token}`,

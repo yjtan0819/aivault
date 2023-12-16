@@ -1,6 +1,6 @@
 const updateProfilePicture = async (token, profilePicture) => {
     try {
-      const response = await fetch('http://localhost:4000/update-profile-picture', {
+      const response = await fetch('https://aivault-backend.onrender.com/update-profile-picture', {
         method: 'POST',
         headers: {
           Authorization: `Bearer ${token}`,

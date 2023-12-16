@@ -2,7 +2,7 @@
 
 const postReply = async (token, imageId, commentId, replyText) => {
     try {
-        const response = await fetch(`http://localhost:4000/post-reply/${imageId}/${commentId}`, {
+        const response = await fetch(`https://aivault-backend.onrender.com/post-reply/${imageId}/${commentId}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

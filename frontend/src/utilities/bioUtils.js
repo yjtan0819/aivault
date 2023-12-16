@@ -1,6 +1,6 @@
 const checkBio = async (token) => {
     try {
-      const response = await fetch('http://localhost:4000/get-bio', {
+      const response = await fetch('https://aivault-backend.onrender.com/get-bio', {
         method: 'GET',
         headers: {
           Authorization: `Bearer ${token}`,

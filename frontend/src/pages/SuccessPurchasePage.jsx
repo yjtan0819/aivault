@@ -32,7 +32,7 @@ const SuccessPurchasePage = () => {
   }
 
   const setUserPremum = async (token) => {
-    const response = await fetch('http://localhost:4000/set-premium', {
+    const response = await fetch('https://aivault-backend.onrender.com/set-premium', {
       method: 'POST',
       headers: {
         Authorization: `Bearer ${token}`,

@@ -36,7 +36,7 @@ const ContentCell = ({image, profilePicture, likes, aimodel, imageID}) => {
 
     const handleLikeClick = async () => {
         try {
-            const response = await fetch(`http://localhost:4000/like-image/${imageID}`, {
+            const response = await fetch(`https://aivault-backend.onrender.com/like-image/${imageID}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ const ContentCell = ({image, profilePicture, likes, aimodel, imageID}) => {
 
     const handleBookmarkClick = async () => {
         try {
-            const response = await fetch(`http://localhost:4000/bookmark-image/${imageID}`, {
+            const response = await fetch(`https://aivault-backend.onrender.com/bookmark-image/${imageID}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

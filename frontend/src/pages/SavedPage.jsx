@@ -39,7 +39,7 @@ function SavedPage() {
 
 
   const fetchImagesFromBackend = async (token) => {
-    const response = await fetch('http://localhost:4000/get-bookmarked-images', {
+    const response = await fetch('https://aivault-backend.onrender.com/get-bookmarked-images', {
       headers: {
         Authorization: `Bearer ${token}`,
       },

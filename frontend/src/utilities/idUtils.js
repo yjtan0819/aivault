@@ -1,7 +1,7 @@
 // authUtils.js
 const checkId = async (token) => {
     try {
-      const response = await fetch('http://localhost:4000/get-id', {
+      const response = await fetch('https://aivault-backend.onrender.com/get-id', {
         method: 'GET',
         headers: {
           Authorization: `Bearer ${token}`,
