@@ -142,8 +142,8 @@ router.post("/create-checkout-session", async (req, res) => {
           quantity: item.quantity,
         }
       }),
-      success_url: `http://localhost:5173/successpurchase`,
-      cancel_url: `http://localhost:5173/home`,
+      success_url: `https://aivault.netlify.app/successpurchase`,
+      cancel_url: `https://aivault.netlify.app/home`,
     })
     res.json({ url: session.url });
 
