@@ -18,8 +18,8 @@ export default {
       colors: {
         'black-transparent': 'rgba(29, 38, 72, 0.85)', // Darkened black-transparent
         'white-transparent': 'rgba(255, 255, 255, 0.8)',
-        'text-light': '#405080', // Darkened text-light
-        'text-dark': '#1b263d', // Darkened text-dark
+        'text-light': '#f0f0f0', // Darkened text-light
+        'text-dark': '#0f1829', // Darkened text-dark
         'background': '#f0f0f0', // Darkened background
         'primary': '#405080', // Darkened primary
         'secondary': '#304860', // Darkened secondary
