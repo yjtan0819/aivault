@@ -19,13 +19,6 @@ function ContentPage() {
   
 
   useEffect(() => {
-    //check if checkoutSuccess is in local storage
-    const checkoutSuccess = localStorage.getItem('checkoutSuccess');
-
-    if (checkoutSuccess) {
-      window.alert('Thank you for your purchase!');
-      localStorage.removeItem('checkoutSuccess');
-    }
 
     if (token) {
       setIsLoading(true);
@@ -55,7 +48,6 @@ function ContentPage() {
       setPrompt(promptData.prompt);
     } catch (error) {
       console.error("Error fetching data:", error);
-      // Handle the error appropriately
     } finally {
       setIsLoading(false);
     }
@@ -95,15 +87,12 @@ function ContentPage() {
   }
 
   if (authenticated){
-
-
     return (
       <div>
           <NavBar />
           <div className='flex items-center justify-center mt-10'>
             <img 
               src = {imagePicture}
-              // imagePicture ? imagePicture.find((imagePicture) => imagePicture.imageId === image._id).imagePicture : null
               className='w-[1060px] h-[600px] rounded-[20px] object-cover'
             />
           </div>
@@ -113,7 +102,6 @@ function ContentPage() {
     );
   }
   else if (authenticated === false) {
-    // Not authenticated state
     window.alert('You must be logged in to view this page.');
     navigate('/login');
     return null;

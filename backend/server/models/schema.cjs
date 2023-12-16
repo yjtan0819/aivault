@@ -32,7 +32,6 @@ const commentSchema = new mongoose.Schema({
     text: String,
     postedBy: mongoose.Schema.Types.ObjectId,
     postedAt: String,
-    replies: [this] // or [commentSchema] if defined separately
   });
 
 const imageSchema = new mongoose.Schema({

@@ -59,9 +59,9 @@ const CheckoutPage = () => {
     return (
       <div className={styles.checkoutContainer}>
           <div className={styles.itemBox}>
-              <img src="crispium.png" alt="Item" className={styles.itemImage}/>
-              <p className={styles.itemName}>Crispium</p>
-              <p className={styles.itemPrice}>$20.00</p>
+              <img src="aivault-high-resolution-logo-transparent.png" alt="Item" className={styles.itemImage}/>
+              <p className={styles.itemName}>AI Elite</p>
+              <p className={styles.itemPrice}>$30.00</p>
           </div>
           <div className={styles.checkoutButtonBox}>
               <button id='checkoutButton' className={styles.checkoutButton} onClick={handleCheckout}>Proceed to checkout</button>

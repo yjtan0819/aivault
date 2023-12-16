@@ -5,8 +5,6 @@ import {BsFillPersonFill} from 'react-icons/bs';
 import postReply from '../utilities/postReplyUtils';
 
 
-
-
 const Comment = ({comment, replies, setReplies, imageId, commentId }) => {
     const [currentReply, setCurrentReply] = useState('');
     const [showReplyInput, setShowReplyInput] = useState(false);

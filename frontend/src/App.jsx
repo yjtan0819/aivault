@@ -10,6 +10,7 @@ import CreatedPage from './pages/CreatedPage';
 import SavedPage from './pages/SavedPage';
 import ProfilePage from './pages/ProfilePage';
 import SuccessPurchasePage from './pages/SuccessPurchasePage';
+import ElitePage from './pages/ElitePage';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/home" element={<HomePage />} />
         <Route path="/content/:id" element={<ContentPage />} />
         <Route path="/created" element={<CreatedPage/>} />
+        <Route path="/elite" element={<ElitePage/>} />
         <Route path="/saved" element={<SavedPage/>} />
         <Route path="/profile" element={<ProfilePage/>} />
         <Route path="/successpurchase" element={<SuccessPurchasePage/>} />

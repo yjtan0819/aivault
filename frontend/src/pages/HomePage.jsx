@@ -23,10 +23,10 @@ function HomePage() {
   useEffect(() => {
     if (token) {
       setIsLoading(true);
-      // Check in the backend if the token is valid
-      checkAuthenticationStatus(token);
-      fetchImagesFromBackend(token).finally(() => {
-        setIsLoading(false);
+      checkAuthenticationStatus(token).then(() => {
+        fetchImagesFromBackend(token).finally(() => {
+          setIsLoading(false);
+        });
       }
       );
     } else {

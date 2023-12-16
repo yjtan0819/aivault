@@ -184,7 +184,7 @@ const NavBar = () => {
         },
         !premiumUser && {
             name: 'Upgrade',
-            route: '/crispium',
+            route: '/elite',
         },
         {
             name: 'Logout',
