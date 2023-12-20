@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../css/Crispium.module.css'; // Adjust the path as needed
+import styles from '../css/Elite.module.css'; // Adjust the path as needed
 import { useState, useEffect } from 'react';
 import checkAuthenticated from '../utilities/authUtils';
 import { useNavigate } from 'react-router-dom';
