@@ -14,7 +14,3 @@ https://aivault.netlify.app/
 - CVC: Any 3 digits
 - Name: Any name
 - Postal Code: Any combination of 3 letters and 3 numbers such as A1A 1A1
-
-## TODO
-
-* Fix Comments
