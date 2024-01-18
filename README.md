@@ -2,7 +2,7 @@
 
 ## Link
 
-https://aivault.netlify.app/ 
+https://aivault.netlify.app/
 Might take time for first login because of Render spinning up for the first time for free tier
 
 ## Credit Card for Testing
