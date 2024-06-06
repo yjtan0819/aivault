@@ -13,7 +13,7 @@
     "@types/react-router-dom": "^5.3.3",
     "autoprefixer": "^10.4.16",
     "install": "^0.13.0",
-    "npm": "^10.2.5",
+    "npm": "^10.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
